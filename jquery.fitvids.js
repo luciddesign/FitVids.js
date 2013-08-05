@@ -8,6 +8,10 @@
 * Released under the WTFPL license - http://sam.zoy.org/wtfpl/
 *
 * Date: Thu Sept 01 18:00:00 2011 -0500
+*
+* !!! - Lucid fork to stop adding weird divs into inapprpriate places inside the head - 5/8/2013
+*		https://github.com/luciddesign/FitVids.js
+*
 */
 
 (function( $ ){
