@@ -1,5 +1,5 @@
 /*global jQuery */
-/*jshint multistr:true browser:true */
+/*jshint browser:true */
 /*!
 * FitVids 1.0
 *
@@ -26,8 +26,8 @@
     if(!document.getElementById('fit-vids-style')) {
 
       var ele = document.createElement('style'),
-		  ref = document.getElementsByTagName('style') || document.getElementsByTagName('link') || document.getElementsByTagName('title');
-	  var ref = ref[ref.length - 1];
+        ref = document.getElementsByTagName('style') || document.getElementsByTagName('link') || document.getElementsByTagName('title');
+      ref = ref[ref.length - 1];
 
       ele.className = 'fit-vids-style';
       ele.id = 'fit-vids-style';
@@ -55,7 +55,7 @@
       }
 
       var $allVideos = $(this).find(selectors.join(','));
-      $allVideos = $allVideos.not("object object"); // SwfObj conflict patch
+      $allVideos = $allVideos.not("object object, .no-fitvid"); // SwfObj conflict patch
 
       $allVideos.each(function(){
         var $this = $(this);
